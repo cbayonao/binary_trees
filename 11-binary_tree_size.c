@@ -5,13 +5,8 @@
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-    int node1 = 0, node2 = 0;
-
-    if (!tree)
-	return (0);
-
-    node1 = binary_tree_size(tree->left);
-    node2 = binary_tree_size(tree->right);
-    node1 += node2;
-    return (node1 + 1);
+	if (tree==NULL)
+		return(0);
+	else
+		return(binary_tree_size(tree->left) + 1 + binary_tree_size(tree->right));
 }
