@@ -1,4 +1,5 @@
-#include "binary_trees.h"
+#include "9-binary_tree_height.c"
+#include "12-binary_tree_leaves.c"
 /**
  *binary_tree_is_full - Function that checks if a binary
  * tree is full.
@@ -9,10 +10,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
-	if (!tree->left && !tree->right)
+	if ((binary_tree_height(tree) * 2) == binary_tree_leaves(tree))
 		return (1);
-	if (tree->left && tree->right)
-		return ((binary_tree_is_full(tree->left) &&
-			 (binary_tree_is_full(tree->right))));
 	return (0);
 }
