@@ -1,8 +1,8 @@
 #include "9-binary_tree_height.c"
 #include "12-binary_tree_leaves.c"
 /**
- *binary_tree_is_full - Function that checks if a binary
- * tree is full.
+ *binary_tree_is_perfect - Function that checks if a binary
+ * tree is perfect.
  *@tree: is a pointer to the root node of the tree to check.
  * Return: 1 if is full or 0 is not full or tree is NULL.
  */
