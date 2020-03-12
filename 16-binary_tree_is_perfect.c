@@ -26,7 +26,8 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
-	if ((_pow_recursion(2, binary_tree_height(tree))) == (int)binary_tree_leaves(tree))
+	if ((_pow_recursion(2, binary_tree_height(tree))) ==
+	    (int)binary_tree_leaves(tree))
 		return (1);
 	else
 		return (0);
